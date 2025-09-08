@@ -1,0 +1,146 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* fondo negro */
+    margin: 0;
+    padding: 0;
+    color: #ffffff; /* texto principal blanco */
+    text-align: center;
+}
+
+header {
+    background: linear-gradient(135deg, #3498DB, #E74C3C); /* degradado azul-rojo */
+    color: #ffffff;
+    padding: 30px 20px;
+    box-shadow: 0 4px 6px rgba(255,255,255,0.2);
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #3c47e7; /* rojo para títulos */
+}
+
+/* GRID DE TARJETAS */
+.grid-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #111111; /* negro más claro que el fondo */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.1);
+    width: 220px;
+    padding: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #ffffff; /* texto blanco */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255,255,255,0.3);
+}
+
+/* GRID DE FOTOS */
+.grid-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.grid-fotos img {
+    width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255,255,255,0.2);
+    object-fit: cover;
+}
+
+/* NAV */
+nav a, .btn-perfil {
+    display: inline-block;
+    margin-bottom: 40px;
+    padding: 12px 25px;
+    background-color: #E74C3C; /* rojo */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, .btn-perfil:hover {
+    background-color: #3498DB; /* azul al pasar el mouse */
+}
+
+/* PERFIL CENTRAL */
+.perfil-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 20px;
+    gap: 30px;
+}
+
+.foto-container {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 220px;
+    height: 220px;
+    box-shadow: 0 8px 20px rgba(255,255,255,0.2);
+}
+
+.foto-grande {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.datos-personales h2 {
+    font-size: 2em;
+    color: #3c47e7; /* rojo en nombre */
+    margin-bottom: 15px;
+}
+
+.datos-personales p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111111; /* negro oscuro */
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
